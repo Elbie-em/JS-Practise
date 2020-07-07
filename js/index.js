@@ -8,4 +8,21 @@ const doStuff = x => {
   return afterF;
 }
 
-console.log(doStuff(20));
+//console.log(doStuff(20));
+
+//Composing functions: Promise Chain
+const i = n => n + 1;
+const j = n => n * 2;
+
+const wait = time => new Promise(
+  (resolve, reject) => setTimeout(
+    resolve,time
+  )
+);
+
+wait(3000)
+    .then(() => 20)
+    .then(i)
+    .then(j)
+    .then(value => console.log(value))
+;
