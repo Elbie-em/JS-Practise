@@ -8,7 +8,9 @@ const trace = label => value => {
   return value
 };
 
-const pipe = (...fns) => x => fns.reduce((y,f) => f(y), x);
+const pipe = (...fns) => x => {
+  fns.reduce((y,f) => f(y), x)
+};
 
 const doStuffBetter = pipe(g, trace('after g'),f,trace('after f'));
 
