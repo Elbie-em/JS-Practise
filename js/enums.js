@@ -15,8 +15,18 @@ const nonMutatingSplice = (cities) => {
  
   return cities.slice(0,3);
 
-  
 }
 
 const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 console.log(nonMutatingSplice(inputCities));
+
+//Concatenation
+
+function nonMutatingConcat(original, attach) {
+  return original.concat(attach)
+}
+const first = [1, 2, 3];
+const second = [4, 5];
+let na = nonMutatingConcat(first, second);
+console.log(first)
+console.log(na)
