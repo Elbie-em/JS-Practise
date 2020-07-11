@@ -25,3 +25,10 @@ function splitify(str) {
   return str.split(/\s|\W/);
 }
 console.log(splitify("Hello World,I-am code"));
+
+console.log('----Join With Regex----');
+
+function sentensify(str) {
+  return str.match(/\w+/g).join(" ")
+}
+console.log(sentensify("May-the-force-be-with-you"));
