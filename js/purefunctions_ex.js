@@ -32,3 +32,16 @@ function sentensify(str) {
   return str.match(/\w+/g).join(" ")
 }
 console.log(sentensify("May-the-force-be-with-you"));
+
+console.log('---Convert String to some what URL---');
+
+// The global variable
+const globalTitle = " Winter Is Coming";
+
+
+function urlSlug(title) {
+  let nu = title.toLowerCase().match(/\S+/g).join("-");
+  return nu;
+}
+
+console.log(urlSlug(globalTitle));
