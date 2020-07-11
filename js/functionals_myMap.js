@@ -17,4 +17,4 @@ var new_s = s.myMap(item => {
   return item * 2;
 });
 
-console.log(new_s)
+console.log(new_s);
