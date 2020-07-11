@@ -11,7 +11,7 @@ const squareList = (arr) => {
 const squaredIntegers = squareList([4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]);
 console.log(squaredIntegers);
 
-console.log('----Sorting with with no mutation----')
+console.log('----Sorting with with no mutation----');
 var globalArray = [5, 6, 3, 2, 9];
 function nonMutatingSort(arr) {
   let sort_arr = [...arr];
@@ -19,4 +19,9 @@ function nonMutatingSort(arr) {
 }
 console.log(nonMutatingSort(globalArray));
 
-console.log('----Working with Split Method----')
+console.log('----Working with Split Method----');
+
+function splitify(str) {
+  return str.split(/\s|\W/);
+}
+console.log(splitify("Hello World,I-am code"));
