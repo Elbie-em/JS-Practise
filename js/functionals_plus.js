@@ -30,3 +30,8 @@ const checkSomePositive = (arr) => {
 }
 
 console.log(checkSomePositive([1, 2, 3, -4, 5]));
+
+console.log('-----Currying Functions-----')
+//Currying functions
+const add = x => y => z => x + y + z;
+console.log(add(10)(20)(30));
